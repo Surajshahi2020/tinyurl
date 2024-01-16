@@ -19,10 +19,8 @@ def shorten_url(original_url, custom_url):
     if original_url:
         if custom_url:
             shortened_url = generate_url(original_url, custom_url)
-            print(2121212)
         else:
             shortened_url = generate_url(original_url)
-            print(777777777777777777777, shortened_url)
         return shortened_url
     else:
         raise ValidationError(
